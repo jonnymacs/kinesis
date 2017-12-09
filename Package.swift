@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
   name: "SwiftAWSKinesis",
   products: [
-      .library(name: "SwiftAWSKinesis", targets: ["SwiftAWSKinesis"]),
+      .library(name: "SwiftAWSKinesis", type: .dynamic, targets: ["SwiftAWSKinesis"]),
   ],
   dependencies: [
       .package(url: "https://github.com/noppoMan/aws-sdk-swift-core.git", .upToNextMajor(from: "1.0.0"))
